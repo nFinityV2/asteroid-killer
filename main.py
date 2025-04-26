@@ -1,4 +1,4 @@
-import pygame
+import pygame 
 from constants import *
 from player import *
 
@@ -18,6 +18,7 @@ def main():
         
         pygame.Surface.fill(screen, "black")
         dt = clock.tick(60) / 1000
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
 
